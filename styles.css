@@ -1,3 +1,4 @@
+
 *, ::before,::after{
   box-sizing:border-box;
   padding:0;
@@ -28,6 +29,34 @@
   width:100%;
   height:40px;
   background:#888;
+}
+.content{
+  position:relative;
+  width:100%;
+  height:50%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-top: 20px;
+
+}
+.pf-pic{
+  width:250px;
+  padding:0 40px;
+  margin-bottom:10px;
+}
+.container{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about{
+  padding: 0 40px;
+  font-size: 16px;
+}
+
+.w-e{
+  padding:46px 40px;
 }
 
 .bottom-bars{
@@ -90,6 +119,10 @@
 .box-icon-bs:hover{
   background:#fff;
 }
+.content-box{
+  height: 41em;
+  overflow:overlay;
+}
 
 .start-pop-box{
   display:flex;
@@ -102,6 +135,8 @@
   transform:translateY(60px);
   transition:all 200ms ease-in;
   opacity:0;
+  visibility:hidden;
+  box-shadow: rgb(204 204 204) 0px 0px 16px;
 }
 .start-pop-box h4{
   margin-left:10px;
@@ -133,7 +168,7 @@
   background:inherit;
   transform:translateX(-144px);
   transition:all 100ms ease-in;
-  border: 1px solid;
+  box-shadow: 0 5px 10px #a3a3a3;
 }
 
 .start-menu-icon{
@@ -149,19 +184,21 @@
 }
 
 .round-border{
-  border-radius: 50px;
+  border-radius: 50%;
 }
 
 .str-bx{
   width:100%;
 }
-
-.grid-container {
+.big-icon{
+  width: 45px;
+}
+.grid-container, .grid {
   padding:10px 10px;
   display: grid;
   grid-template-columns: auto ;
   width:100%;
-  overflow:scroll;
+  overflow:overlay;
 }
 
 .grid-item {
@@ -174,6 +211,13 @@
 .grid-item:hover{
   background:#eee;
 }
+
+.grid{
+  grid-template-columns: auto auto auto auto auto;
+}
+.skill-icon{
+  width: 20px;
+}
 .extra-box{
   height:100px;
 }
@@ -181,11 +225,12 @@
   border:1.5px solid white;
 }
 ::-webkit-scrollbar {
-  width: 2px;
+  width: 4px;
 }
 
 ::-webkit-scrollbar-thumb{
   background:#666;
+  border-radius: 50px;
 }
 
 ::-webkit-scrollbar-thumb:hover{
@@ -210,9 +255,16 @@
 .grid-box-items{
   height:70px;
   background:#eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .left-align{
   display: flex;
   align-items: flex-start;
+}
+
+.edu{
+  font-size:11px;
 }
